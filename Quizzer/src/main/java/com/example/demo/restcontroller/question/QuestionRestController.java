@@ -22,7 +22,7 @@ public class QuestionRestController {
     "content-type=application/json" }, method = RequestMethod.POST)
 	public Object createQuestion(@RequestBody Question question) {
 		questionService.saveQuestion(question);
-		return question;
+		return question; 
 	}
 	
 	@PutMapping("/editQuestion")
